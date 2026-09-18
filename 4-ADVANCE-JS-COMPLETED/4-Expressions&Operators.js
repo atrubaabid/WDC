@@ -28,7 +28,7 @@
 // 2. ASSIGNMENT OPERATORS
 
 // let n = 5;
-// console.log(n += 2);
+// console.log(n += 2);         =>  n = n + 2   //7
 // console.log(n -= 2);
 // console.log(n *= 2);
 // console.log(n /= 2);
@@ -46,7 +46,7 @@
 // let a = 10;
 // let b = 20;
 // let c = 5;
-// console.log(a == b);
+// console.log(a == b);         
 // console.log(a != b);
 // console.log(a === b);
 // console.log(a !== b);
@@ -65,8 +65,13 @@
 
 // 4. LOGICAL OPERATORS
 
+// AND
 // console.log(10 < 20 && 20 > 10); //give true when all cond true
+
+// OR
 // console.log(10 < 20 || 20 > 10); //give true even one cond true
+
+// NOT
 // console.log(!(10 != 10)); //reverse the answers
 
 

@@ -1,3 +1,28 @@
+//📌 SUMMERY
+// 1. Array → ek variable mein multiple values store karta hai
+// 2. for loop → index ke through values ko one by one access karta hai
+// 3. for...of → values ko one by one access karta hai
+// 4. for...in → indexes/keys ko one by one access karta hai
+// 5. forEach() → har value par ek kaam perform karta hai
+// 6. map() → har value ko transform karke new array banata hai
+// 7. filter() → condition match karne wali values ka new array banata hai
+// 8. find() → condition match karne wali first value return karta hai
+// 9. findIndex() → condition match karne wali first value ka index return karta hai
+// 10. reduce() → sari values ko combine karke ek result banata hai
+// 11. push() → end mein value add karta hai
+// 12. pop() → end se value remove karta hai
+// 13. unshift() → start mein value add karta hai
+// 14. shift() → start se value remove karta hai
+// 15. splice() → kahin bhi value add, remove ya replace karta hai
+// 16. indexOf() → value ka first index find karta hai
+// 17. lastIndexOf() → value ka last index find karta hai
+// 18. includes() → check karta hai value array mein hai ya nahi
+// 19. sort() → array ki values ko order mein arrange karta hai
+// 20. slice() → array/string ka portion copy karke return karta hai
+
+
+
+
 //* ======================================
 //* ARRAYS IN JAVASCRIPT
 //* =====================================
@@ -12,17 +37,22 @@
 //? Using Array constructor
 // let fruits = new Array('apple', 'orange', 'banana')
 // console.log(fruits);
+// console.log(typeof fruits);
+
 
 
 
 //? Using array literal
 // let fruits2 = ["apple", "orange", "banana"];
 // console.log(fruits2);
+// console.log(typeof fruits2);
 
 
 
 //? we can also create an empty array
 // let arr = [];
+// console.log([]);
+
 // console.log(typeof arr);
 
 
@@ -42,6 +72,7 @@
 //* ======================================
 //*  Modifying Elements:
 //* =====================================
+
 
 // let fruits = ["apple", "orange", "banana"];
 // fruits[2] = "mango";
@@ -100,10 +131,7 @@
 //use for Dom manipulation
 
 
-
-
 // let fruits = ["apple", "orange", "mango", "grapes", "banana"];
-
 
 
 // const myForEachArr = fruits.forEach((curElem, index, arr) => {
@@ -149,7 +177,6 @@
 
 // //foreach kuch return nhi kerta undefined deta hy that's why console not work for forEach
 
-
 // console.log(res);
 
 
@@ -194,18 +221,24 @@
 
 // })
 
+// console.log(numbers);
+
+
 
 // ----------------------------------------
 
 
+// const numbers = [1, 2, 3, 4, 5];
+
 
 // let res = numbers.map((item, index) => {
-//     // console.log(item * 2);
+//     console.log(item * 2);
 //     return item * 2;
 
 // })
 
 // console.log(res);
+// console.log(numbers);
 
 
 //* Use Case:
@@ -222,6 +255,7 @@
 // let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 // // ? 1: push(): Method that adds one or more elements to the end of an array.
+
 // console.log(fruits.push("guava"));
 // console.log(fruits);
 // // The push() method returns the new length.
@@ -240,6 +274,8 @@
 // // ? 4: shift(): Method that removes the first element from an array.
 // console.log(fruits.shift());
 // console.log(fruits);
+
+
 
 
 //* ==========================================================================
@@ -268,6 +304,8 @@
 
 // const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
 // console.log(numbers.indexOf(6));       //4
+
+// indexOf(value, startIndex)
 // console.log(numbers.indexOf(6, 5));    //6
 // console.log(numbers.indexOf(11, 5));    //-1    cz its not found
 
@@ -300,6 +338,7 @@
 // const result = numbers.includes(5);
 // console.log(result);        //true
 
+// indexOf(value, startIndex)
 // const result1 = numbers.includes(5, 6);
 // console.log(result1);       //false
 
@@ -333,6 +372,8 @@
 //*  Filter in an Array
 //* =========================================
 
+
+
 // FIND METHOD
 
 //? 1: find Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
@@ -355,6 +396,7 @@
 // FINDINDEX METHOD
 
 //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -415,7 +457,7 @@
 
 // // Filter products with a price less than or equal to 500
 
-// const filterProducts = products.filter((curElem) => {
+// const filterProducts = products.filter((curElem) => {  
 //   return curElem.price <= 500;
 // });
 // console.log(filterProducts);
@@ -451,6 +493,12 @@
 // console.log(fruits.sort());
 // console.log(numbers.sort());
 
+
+// ----------------------------------------------------------
+
+
+
+// const numbers = [1, 2, 4, 3, 6, 5, 6, 7, 4, 8, 9];
 
 
 // const sortedNumbers = numbers.sort((a, b) => a - b);
@@ -531,6 +579,8 @@
 
 // ==========================================================================================================================================
 
+
+
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 
@@ -541,8 +591,7 @@
 //     if (curElem % 2 === 0) {
 //         return curElem * curElem;
 //     }
-// })
-//     .filter((curElem) => curElem !== undefined);
+// }).filter((curElem) => curElem !== undefined);
 
 // console.log(result);
 
@@ -551,8 +600,10 @@
 // ----------------------
 
 
-// const evenSquare = numbers.map((curNum) => (curNum % 2 === 0 ? curNum * curNum : undefined))
-//     .filter((curElem) => curElem !== undefined);
+
+// const numbers = [1, 2, 4, 3, 6, 5, 6, 7, 4, 8, 9];
+
+// const evenSquare = numbers.map((curNum) => (curNum % 2 === 0 ? curNum * curNum : undefined)).filter((curElem) => curElem !== undefined);
 
 // console.log(evenSquare);
 
@@ -585,6 +636,12 @@
 // });
 
 // console.log(totalPrice);
+
+
+
+
+
+// COMPLETED
 
 
 

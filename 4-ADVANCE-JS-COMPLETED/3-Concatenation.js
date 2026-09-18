@@ -23,7 +23,7 @@
 // console.log(" " + " ");               //spaces print
 // let sum = " " + 0;
 // console.log(typeof sum);             //string
-// console.log("vinod" - "thapa");      //NaN
+// console.log("syeda" - "Atruba");      //NaN
 // console.log(true + true);            //2
 // console.log(true + false);          //1
 // console.log(false + true);          //1
@@ -32,7 +32,7 @@
 
 
 
-// only + sign can concatinate other signs like -, /,  * can recognize the number and perform the task
+// only + sign can concatinate, other signs like -, /,  * can recognize the number and perform the task
 
 
 
