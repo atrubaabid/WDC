@@ -18,6 +18,8 @@
 
 
 
+
+
 // console.log(a, typeof (a));
 // console.log(b, typeof (b));
 // console.log(c, typeof (c));
@@ -98,6 +100,8 @@
 
 // ---------------------------------------------------------------
 
+
+
 //* ========== parseInt & parseFloat Section ==========
 
 // parseInt
@@ -105,6 +109,8 @@
 // const myString = "42.5";
 // const myNumber = parseInt(myString);
 // console.log(myNumber); // Output: 42
+
+
 
 // parseFloat
 
