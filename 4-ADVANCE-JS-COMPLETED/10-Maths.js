@@ -34,8 +34,8 @@
 //? Math.round(x): Rounds a number to the nearest integer.
 
 
-// const roundedValue = Math.round(3.7);
-// const roundedValue = Math.round(3.4);
+// const roundedValue = Math.round(3.7);   //4
+// const roundedValue = Math.round(3.4);   //3
 // console.log(roundedValue);
 
 
@@ -49,7 +49,7 @@
 //? Math.ceil(x): Returns the value of x rounded up to its nearest integer:
 
 
-// const ceilValue = Math.ceil(3.7);
+// const ceilValue = Math.ceil(3.7);     //4
 // console.log(ceilValue);
 
 
@@ -61,16 +61,14 @@
 //? Math.floor(x): Returns the value of x rounded down to its nearest integer.
 
 
-// const floorValue = Math.floor(3.7);
+// const floorValue = Math.floor(3.7);     //3
 // console.log(floorValue);
 
 
 
 // ---------------------------------------------------------
 
-// Math.trunc(x)
-
-//? Math.trunc(x): Returns the integer part of x:
+// Math.trunc(x)  =>  Number ka decimal part remove karta hai aur sirf integer part return karta hai.
 
 
 // const truncValue = Math.trunc(3.7);
@@ -152,6 +150,9 @@
 // console.log(Math.floor(Math.random() * 100));
 // console.log(Math.ceil(Math.random() * 100));
 // console.log((Math.random() * 100).toFixed(2));
+
+
+// COMPLETED
 
 
 

@@ -1,3 +1,65 @@
+// 📌 SUMMARY
+
+// ⭐ String Basic
+// length → String mein total characters ki quantity batata hai.
+// size → Set mein total unique values ki quantity batata hai.
+
+
+// ⭐ Escape Characters
+// \' → String mein single quote likhne ke liye use hota hai.
+// \" → String mein double quote likhne ke liye use hota hai.
+// \\ → String mein backslash likhne ke liye use hota hai.
+// \n → Text ko new line mein le jata hai.
+
+// ⭐ String Search Methods
+// indexOf() → String mein kisi word ya character ka pehla index find karta hai; na mile to -1 return karta hai.
+// lastIndexOf() → String mein kisi word ya character ka last occurrence ka index find karta hai.
+// search() → String mein kisi value ya pattern ko search karke uska index return karta hai.
+// match() → String mein matching values ko array ki form mein return karta hai; match na mile to null deta hai.
+// matchAll() → String mein kisi pattern ki saari matching values find karta hai aur iterator return karta hai.
+// includes() → Check karta hai ke string mein koi word ya character maujood hai ya nahi; result true ya false hota hai.
+
+// ⭐ String Start / End Methods
+// startsWith() → Check karta hai ke string given value se start hoti hai ya nahi us k hisab sy true/false result deta hy.
+// endsWith() → Check karta hai ke string given value par end hoti hai ya nahi us k hisab sy true/false result deta hy.
+
+// ⭐ Extracting String Parts
+// slice() → String ka koi specific part nikalta hai aur negative index bhi support karta hai.
+// substring() → String ka koi specific part nikalta hai, lekin negative index ko 0 treat karta hai.
+
+// ⭐ Extracting String Characters
+// charAt() → String ke given index par mojood character return karta hai.
+// charCodeAt() → String ke given index ke character ka UTF-16 numeric code return karta hai.
+// at() → String ke given index par mojood character return karta hai aur negative index bhi support karta hai.
+
+// ⭐ Replacing String Content
+// replace() → String mein pehli matching value ko doosri value se replace karta hai.
+// replaceAll() → String mein matching value ki saari occurrences ko replace karta hai.
+
+// ⭐ Changing Case
+// toUpperCase() → String ke saare letters ko uppercase mein convert karta hai.
+// toLowerCase() → String ke saare letters ko lowercase mein convert karta hai.
+
+// ⭐ Removing Spaces
+// trim() → String ke start aur end ke extra spaces remove karta hai.
+
+// ⭐ String → Array
+// split() → String ko given separator ke according array mein convert karta hai.
+// Array.from() → String ya kisi iterable ko array mein convert karta hai.
+
+
+// ⭐ Regular Expression Flags
+// i → Search mein uppercase aur lowercase ka farq ignore karta hai.
+// g → Search mein sirf pehli nahi, saari matching values find karta hai.
+
+// ⭐ Character Code
+// String.fromCharCode() → Numeric character code ko character mein convert karta hai.
+
+// ⭐ Set
+// new Set() → Collection mein se duplicate values remove karke unique values rakhta hai.
+
+
+
 //* =========================================
 //* String in JavaScript
 //* =========================================
@@ -167,7 +229,7 @@
 
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.startsWith("welcome");
+// // let result = text.startsWith("welcome");
 // let result = text.startsWith("Hello");
 // console.log(result);
 
@@ -284,10 +346,8 @@
 
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.charCodeAt(6);
+// let result = text.charCodeAt(3);
 // console.log(result);
-
-
 
 
 // ---------------------------------------------------------------------------------------------------------------
