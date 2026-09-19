@@ -78,7 +78,7 @@
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 
-// // i ka matlab hai: case-insensitive search. Yani JavaScript uppercase aur lowercase letters ka farq ignore karega.
+// // // i ka matlab hai: case-insensitive search. Yani JavaScript uppercase aur lowercase letters ka farq ignore karega.
 
 // let result = text.search(/Javascript/i);
 // console.log(result);
@@ -116,8 +116,9 @@
 // let matchResult = text.matchAll("javascript");
 // let matchResult = text.matchAll("JavaScript");
 
-//todo  here the js converts the normal text into regular expression text.match(/JavaScript/g); also adds the g flag at the end
+// todo  here the js converts the normal text into regular expression text.match(/JavaScript/g); also adds the g flag at the end
 
+// console.log(matchResult);
 // console.log(...matchResult);
 
 // -------------------------------------------
@@ -152,7 +153,7 @@
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 
 
-// // let includeResult = text.includes(/java/i);   //error
+// let includeResult = text.includes(/java/i);   //error
 // let includeResult = text.includes("a");
 // console.log(includeResult);
 
@@ -166,7 +167,7 @@
 
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.startsWith("Helcome");
+// let result = text.startsWith("welcome");
 // let result = text.startsWith("Hello");
 // console.log(result);
 
@@ -186,8 +187,8 @@
 
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.endsWith("welcome");       //true
-// let result = text.endsWith("course");           //false
+// // let result = text.endsWith("welcome");       //false
+// let result = text.endsWith("course");           //true
 // console.log(result);
 
 
@@ -205,7 +206,7 @@
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.slice(6);
-// let result = text.slice(6, 16);
+// let result = text.slice(6, 17);
 // console.log(result);
 
 
@@ -222,9 +223,9 @@
 
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.substring(0);
-// let result = text.substring(1);
-// let result = text.substring(-10);    //end index not work
+// // let result = text.substring(0);
+// // let result = text.substring(1);
+// // let result = text.substring(-10);    //end index not work
 // console.log(result);
 
 
@@ -275,13 +276,18 @@
 
 // ---------------------------------------------------------------------------------------------------------------
 
+
+
 //  charCodeAt()
 
 //? charCodeAt() : The charCodeAt() method returns the code of the character at a specified index in a string. The method returns a UTF-16 code (an integer between 0 and 65535).
 
+
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.charCodeAt(6);
 // console.log(result);
+
+
 
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -293,6 +299,7 @@
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.at(-10);     //end index work in at()
+// let result = text.at(10);     //end index work in at()
 // console.log(result);
 
 
@@ -318,16 +325,20 @@
 // -----------------------------
 
 // let originalString = "Hello, World! How are you, World?";
+// // let replacedString = originalString.replace("World", "JS");
 // let replacedString = originalString.replace(/world/gi, "JS");
 // console.log(replacedString);
 
 
+
 // -----------------------------
+
 
 // replaceAll()
 
 
 // let originalString = "Hello, World! How are you, World?";
+// // let replacedString = originalString.replaceAll("World", "JS!");
 // let replacedString = originalString.replaceAll(/world/ig, "JS!");
 // console.log(replacedString);
 
@@ -338,6 +349,7 @@
 //* Other Useful Methods:
 //* =========================================
 
+
 // const str = "JavaScript";
 // console.log(str.toUpperCase()); // Outputs: JAVASCRIPT
 // console.log(str.toLowerCase()); // Outputs: javascript
@@ -346,8 +358,8 @@
 
 // ---------------------------------------------------------------------------------------------------------------
 
-// trim()  =>   Removes whitespace from both ends of the string.
 
+// trim()  =>   Removes whitespace from both ends of the string.
 
 
 // const str = "   Hello, World!   ";
@@ -365,7 +377,7 @@
 
 
 // const str = "apple,orange,banana";
-// let strArr = str.split(",").reverse().join();
+// // let strArr = str.split(",").reverse().join();
 // console.log(strArr);
 
 
@@ -382,6 +394,11 @@
 
 // console.log("A".charCodeAt(0));
 // console.log("Z".charCodeAt(0));
+// console.log("a".charCodeAt(0));
+// console.log("z".charCodeAt(0));
+
+//   console.log(String.fromCharCode(97));
+
 
 // for (let char = 97; char <= 122; char++) {
 //   console.log(String.fromCharCode(char));
@@ -451,14 +468,20 @@
 //     let inputArr = str.toLowerCase().split("");
 //     //   console.log(inputArr);
 //     //   console.log("z".charCodeAt());
+
 //     const values = inputArr.filter(
 //         (curElem) =>
 //             curElem.charCodeAt() >= "a".charCodeAt() &&
 //             curElem.charCodeAt() <= "z".charCodeAt()
 //     );
+
+//     // console.log(values.sort());
 //     // console.log(values.length);
 
+  
+
 //     return new Set(values).size === 26;
+    
 
 //     // return [...new Set(values)].length === 26;
 // };
