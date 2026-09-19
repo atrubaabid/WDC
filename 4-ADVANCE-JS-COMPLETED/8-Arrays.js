@@ -3,22 +3,32 @@
 // 2. for loop → index ke through values ko one by one access karta hai
 // 3. for...of → values ko one by one access karta hai
 // 4. for...in → indexes/keys ko one by one access karta hai
-// 5. forEach() → har value par ek kaam perform karta hai
-// 6. map() → har value ko transform karke new array banata hai
-// 7. filter() → condition match karne wali values ka new array banata hai
-// 8. find() → condition match karne wali first value return karta hai
-// 9. findIndex() → condition match karne wali first value ka index return karta hai
-// 10. reduce() → sari values ko combine karke ek result banata hai
+// 5. forEach(() => { })    →    har value par ek kaam perform karta hai
+// 6. map(() => { })    →    har value ko transform karke new array banata hai
+// 7. filter(() => { })    →    condition match karne wali values ka new array banata hai
+// 8. find(() => { })    →    condition match karne wali first value return karta hai
+// 9. findIndex(() => { })    →    condition match karne wali first value ka index return karta hai
+// 10. reduce(() => { })    →    sari values ko combine karke ek result banata hai
+
+//ARRAY METHODS WHO CHANGE ORIGINAL ARRAY
 // 11. push() → end mein value add karta hai
 // 12. pop() → end se value remove karta hai
 // 13. unshift() → start mein value add karta hai
 // 14. shift() → start se value remove karta hai
 // 15. splice() → kahin bhi value add, remove ya replace karta hai
-// 16. indexOf() → value ka first index find karta hai
-// 17. lastIndexOf() → value ka last index find karta hai
-// 18. includes() → check karta hai value array mein hai ya nahi
-// 19. sort() → array ki values ko order mein arrange karta hai
-// 20. slice() → array/string ka portion copy karke return karta hai
+// 16. sort() → array ki values ko order mein arrange karta hai
+// 17. reverse() → Array ke elements ko ulta order mein kar deta hai.
+// 18. fill() → Array ke elements ko ek given value se fill kar deta hai.
+
+
+//ARRAY METHODS WHO CANNOT CHANGE ORIGINAL ARRAY
+// 19. slice() → array/string ka portion copy karke return karta hai
+// 20. concat() → Do ya zyada arrays ko jod kar ek new array banata hai.
+// 21. join() → Array ke elements ko jod kar ek string banata hai.
+// 22. toString() → Array ko string mein convert karta hai.
+// 23. includes() → check karta hai value array mein hai ya nahi
+// 24. indexOf() → value ka first index find karta hai
+// 25. lastIndexOf() → value ka last index find karta hai
 
 
 
@@ -225,7 +235,7 @@
 
 
 
-// ----------------------------------------
+// --------------------------------------------------------------------------------
 
 
 // const numbers = [1, 2, 3, 4, 5];
@@ -247,9 +257,9 @@
 //? map: Used when you want to create a new array based on the transformation of each element in the original array.
 
 
-//* ==========================================================================
-//*  How to Insert, Add, Replace and Delete Elements in Array(CRUD)
-//* ==========================================================================
+//* ============================================
+//*  //ARRAY METHODS WHO CHANGE ORIGINAL ARRAY
+//* ============================================
 
 
 // let fruits = ["apple", "orange", "mango", "grapes", "banana"];
@@ -275,6 +285,18 @@
 // console.log(fruits.shift());
 // console.log(fruits);
 
+// // ? 5: sort(): sort alphabetically like a-z and 0-10
+// console.log(fruits.sort());
+// console.log(fruits);
+
+// // ? 6: reverse(): reverse all the condition
+// console.log(fruits.reverse());
+// console.log(fruits);
+
+// // ? 7: fill(): change value
+//your value, start position, end poistion
+// console.log(fruits.fill(9, 2, 4));
+// console.log(fruits);
 
 
 
@@ -294,9 +316,10 @@
 
 
 
-//* =========================================
-//*  Searching in an Array
-//* =========================================
+
+//* =============================================
+//  ARRAY METHODS WHO CANNOT CHANGE ORIGINAL ARRAY
+//* =============================================
 
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
@@ -338,13 +361,60 @@
 // const result = numbers.includes(5);
 // console.log(result);        //true
 
-// indexOf(value, startIndex)
+// includes(value, startIndex)
 // const result1 = numbers.includes(5, 6);
 // console.log(result1);       //false
 
 
 
 // ----------------------------------------
+
+// 4. slice() → array/string ka portion copy karke return karta hai
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let arr = l.slice(2, 4);
+// console.log(arr);
+// console.log(l);
+
+// ----------------------------------------
+
+
+// 5. concat() → Do ya zyada arrays ko jod kar ek new array banata hai.
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let a = ["1", "green", "blue", "yellow", "gray"];
+// let b = ["2", "green", "blue", "yellow", "gray"];
+// let arr= l.concat(a,b);
+// console.log(arr);
+
+
+// ----------------------------------------
+
+// 6. join() → Array ke elements ko jod kar ek string banata hai.
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let n = [2, 3, 4, 5];
+
+// console.log(l.join("-"));
+// console.log(n.join("-"));
+
+
+// ----------------------------------------
+
+
+// 7. toString() → Array ko string mein convert karta hai.
+
+// let l = ["red", "green", "blue", "yellow", "gray"];
+// let n = [2, 3, 4, 5];
+
+// console.log(l.toString());
+// console.log(n.toString());
+
+
+
+// ----------------------------------------
+
+
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?

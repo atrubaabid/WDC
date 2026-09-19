@@ -26,7 +26,7 @@
 
 // let text = "My name is ' Syeda Atruba '  & I am a Full Stack Developer. ";
 // let text = 'My name is " Syeda Atruba  " & I am a Full Stack Developer. ';
-// let text = "My name is ' Syeda Atruba ' & \\ I am a \n \"Full Stack Developer\". ";
+// let text = "My name is ' Syeda Atruba ' & I am a \n \"Full Stack Developer\". ";
 
 // console.log(text);
 
@@ -39,9 +39,9 @@
 // indexOf()
 
 // let text = "Syeda Atruba";
-// console.log(text.indexOf("atruba"));
-// // The indexOf() method is case sensitive.
-// console.log(text.indexOf("Atruba"));
+// console.log(text.indexOf("atruba"));         //-1
+// // // The indexOf() method is case sensitive.
+// // console.log(text.indexOf("Atruba"));      //6
 
 
 // ---------------------------------------------------------------------------------------------------------------
