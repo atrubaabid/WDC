@@ -1,0 +1,170 @@
+//EVENTS, DELEGATION & EVENT BUBBLING
+
+//MOUSE EVENTS
+
+// click        = Single Click
+// dbclick      = Double Click
+// contextmenu  = Right Click
+// mouseenter   = When mouse enters element
+// mouseleave   = When mouse leaves element
+// mousemove    = Mouse movements
+// mousedown    = Mouse button pressed
+// mouseup      = Mouse button released
+
+
+// let mainDiv = document.querySelector(".main");
+
+// //MOUSEENTER
+// mainDiv.addEventListener("mouseenter", () => {
+//     mainDiv.style.backgroundColor = "green"
+// })
+
+// //MOUSELEAVE
+// mainDiv.addEventListener("mouseleave", () => {
+//     mainDiv.style.backgroundColor = "blue"
+// })
+
+// //CONTEXTMENU
+// mainDiv.addEventListener("contextmenu", () => {
+//     console.log("hey");
+//     mainDiv.innerHTML = "<h1>Hello Atruba<h1/>"
+
+// })
+
+// //MOUSEMOVE
+// mainDiv.addEventListener("mousemove", () => {
+//     mainDiv.innerHTML = "<h1>Mouse Move<h1/>"
+// })
+
+// //MOUSEDOWN
+// mainDiv.addEventListener("mousedown", () => {
+//     mainDiv.innerHTML = "<h1>Mouse Down<h1/>"
+// })
+
+// //MOUSEUP
+// mainDiv.addEventListener("mouseup", () => {
+//     mainDiv.innerHTML = "<h1>Mouse Up<h1/>"
+// })
+
+
+// =======================================================
+
+//KEYBOARD EVENTS
+
+// keydown    = when key pressed، its worked
+// keyup      = when key pressed then released، its worked
+
+// let mainDiv = document.querySelector(".main");
+
+//KEYDOWN
+// mainDiv.addEventListener("keydown", () => {
+//         console.log("Atruba");
+// })
+
+
+// KEYUP
+// mainDiv.addEventListener("keyup", () => {
+//     console.log("Atruba");
+// })
+
+
+
+// =======================================================
+
+
+// FORM EVENTS
+
+// submit   = form submitted
+// change   = Value changed (select, checkbox, etc.)
+// input    = Value entered in real-time
+// focus    = input gets focus
+// blur     = input loses focus
+
+
+// =======================================================
+
+// WINDOW EVENTS
+
+// load        = page fully loaded
+// scroll      = page scroll
+// resize      = window size change
+
+
+// // LOAD
+// let mainDiv = document.querySelector(".main");
+// window.addEventListener("load", () => {
+//     mainDiv.style.display = "block"
+// })
+
+// =======================================================
+
+// CLIPBOARD EVENTS
+
+//copy      = Copy Content
+//cut       = Cut Content
+//paste     = Paste Content
+
+
+
+
+// =======================================================
+
+// EVENT OBJECT
+
+// let mainDiv = document.querySelector(".main");
+
+
+// mainDiv.addEventListener("click", (e) => {
+//     console.log(e.type);    //click
+//     console.log(e.target); //which element clicked
+//     console.log(e.currentTarget); //which element selected like mainDiv
+//     console.log(e.clientX);
+//     console.log(e.clientY);
+// })
+
+
+// =======================================================
+
+// EVENT DELEGATION
+
+// let mainDiv = document.querySelector(".main");
+
+
+// mainDiv.addEventListener("click", (e) => {
+
+
+//     if (e.target.tagName == "BUTTON") {
+//         console.log("Atruba"); //when you click button then this work
+
+//     }
+
+// })
+
+// =======================================================
+
+//EVENT BUBBLING WITH STOP PROPAGATION
+
+// BUBBLING
+
+
+// let mainDiv = document.querySelector(".main");
+// let btn = document.querySelector(".btn")
+
+
+// mainDiv.addEventListener("click", (e) => {
+//     console.log("ousidediv");
+// })
+
+
+
+// btn.addEventListener("click", (e) => {
+//     console.log("button"); //BUBBLING bcz when this btn clicked maindiv also run
+//     e.stopPropagation(); //This one stop bubbling
+
+// })
+
+
+// =======================================================
+
+
+//COMPLETED
