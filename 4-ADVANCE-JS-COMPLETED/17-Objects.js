@@ -1,3 +1,75 @@
+
+// 🔹 Object Basics
+
+// object → Related data ko key-value pairs mein store karta hai.
+
+// property → Object ke andar key + value ka pair hota hai.
+
+// key → Property ka naam hota hai.
+
+// value → Property ke andar stored data hota hai.
+
+// object.property → Property ko dot notation se access karta hai.
+
+// object[property] → Property ko bracket notation se access karta hai; variable ki value ko property name ke taur par use kar sakta hai.
+
+// object[property] = value → Existing property ko update ya new property ko add karta hai.
+
+// 🔹 Methods
+
+// method → Object ke andar stored function jo koi kaam perform karta hai.
+
+// object.method() → Object ke method ko run/call karta hai.
+
+// 🔹 Dynamic Keys
+
+// [key] → Variable ki value ko object ki property/key bana deta hai.
+
+// 🔹 Passing & Copying
+
+// pass by value → Primitive value ki copy pass hoti hai, isliye original value change nahi hoti.
+
+// pass by reference → Object ka reference share hota hai, isliye changes original object ko bhi affect karte hain.
+
+// Object.assign() → Objects ki properties ko copy/merge karke target object mein daalta hai.
+
+// spread operator (...) → Object ki properties ko copy ya merge karne ka easy way hai.
+
+// 🔹 this
+
+// this → Current object/context ko refer karta hai.
+
+// this.name → Current object ki name property ko access karta hai.
+
+// this in object method → Normally us object ko refer karta hai jisne method call kiya.
+
+// this in arrow function → Apna khud ka this nahi banata; outer scope ka this use karta hai.
+
+// this in event function → Regular function mein this us element ko refer karta hai jis par event laga hai.
+
+// 🔹 Useful Object Methods
+
+// Object.keys(obj) → Object ki saari keys ka array deta hai.
+
+// Object.values(obj) → Object ki saari values ka array deta hai.
+
+// Object.entries(obj) → Object ki key-value pairs ka array deta hai.
+
+// obj.hasOwnProperty("key") → Check karta hai ke object ke andar ye property directly موجود hai ya nahi; true/false deta hai.
+
+// Object.assign() → Ek ya multiple objects ki properties ko target object mein copy/merge karta hai.
+
+// Object.freeze(obj) → Object ko lock karta hai, taake uski properties add, change ya delete na ki ja saken.
+
+// 🔹 JSON
+
+// JSON.stringify() → JavaScript object ko JSON string mein convert karta hai.
+
+// JSON.parse() → JSON string ko JavaScript object mein convert karta hai.
+
+
+
+
 //* ==============================
 //* Object in JavaScript
 //* ==============================
@@ -261,7 +333,7 @@
 // const obj2 = { name: "Rida" };
 // const obj3 = obj1;
 
-// // const isEqual = obj1 == obj2 ? true : false;
+
 // // const isEqual = obj1 == obj2 ? true : false;       //false
 // const isEqual = obj1 == obj3 ? true : false;          //true
 // console.log(isEqual);
@@ -497,7 +569,7 @@
 // const source = { b: 3, c: 4 };
 
 // const mergedObject = Object.assign({}, target, source);
-// console.log(mergedObject);
+// console.log(mergedObject);    //{a: 1, b: 3, c: 4}
 
 
 
@@ -530,11 +602,28 @@
 
 // addSubjectGrade(student, "computer", 92);
 // console.log(student);
+// console.log(student.grades.science);   //85
+
+
+// object.variable   =>   ❌ Variable ki value nahi leta — literal property name leta hai.
+//object[variable]   =>   ✅ Variable ki value ko property name banata hai.
+
+
+// Final  ⭐
+// Function call mein "computer" dene se subject ki value set hoti hai.
+// Lekin object ke andar us value ko property name banane ke liye [] lagana zaroori hai.
+// [] ka matlab yahan hai: variable ki value ko property name ke taur par use karo.
+
+
+
+
 
 
 //* ===============================================
 //* Interview Question - Object Comparison:
 //* ================================================
+
+
 
 //! Problem: Write a function that compares two objects to determine if they have the same properties and values.
 
@@ -590,6 +679,8 @@
 //         // console.log(key.id, key);
 //         obj[key.id] = key;
 //     }
+//     console.log(obj);
+    
 //     return obj;
 // };
 
