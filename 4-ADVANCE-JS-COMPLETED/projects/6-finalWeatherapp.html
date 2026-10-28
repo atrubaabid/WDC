@@ -210,8 +210,6 @@
 
 
     <script>
-        // https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
-        // 66f9d5eb1020e310d0f0374665c61254
 
         let cityName = document.querySelector(".city-name");
         let dateTime = document.querySelector(".date-time");
@@ -271,8 +269,7 @@
 
         // get weather data
         const getWeatherData = async () => {
-            // let APIurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=66f9d5eb1020e310d0f0374665c61254`
-            let APIurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=66f9d5eb1020e310d0f0374665c6125`
+            let APIurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=YOUR_API_KEY&units=metric`
 
             let res = await fetch(APIurl)
             let data = await res.json();
