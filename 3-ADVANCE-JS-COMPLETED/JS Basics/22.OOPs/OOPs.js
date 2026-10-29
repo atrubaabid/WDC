@@ -255,6 +255,161 @@
 
 
 
+// OBJECT ORIENTED PROGRAMMING  -  in JS
+
+
+// class Cars {
+//     constructor(name, color, mileage) {
+//         this.name = name;
+//         this.color = color;
+//         this.mileage = mileage;
+//     }
+
+//     start() {
+//         console.log(`${this.name} is starting`);
+
+//     }
+
+//     stop() {
+//         console.log(`${this.name} is stoping`);
+
+//     }
+// }
+
+
+
+// let toyota = new Cars("Toyota", "Pearl White", 15);
+// let bmw = new Cars("BMW", "Metallic Grey", 10);
+// let bugatti = new Cars("Bugatti", "Royal Blue", 5);
+
+
+
+
+// ==========================================================================================================================================================
+
+
+
+
+// 4 PILLARS OF OOPs
+
+// Encapsulation >> Hiding data inside an object and protecting it from direct access.
+
+// Abstraction >> Hiding complexity and showing only the essential features.
+
+// INHERITANCE  >>  inheritance is passing down properties & methods from parent class to child class
+
+
+
+
+
+
+// ABSTRACTION & ENCAPSULATION------------------------------------------------------------------=============================================================
+
+
+// class Car {
+
+//     // Encapsulation 
+//     #fuel = 100;
+
+//     #burnFuel() {
+//         this.#fuel -= 1;
+//     }
+
+//     // Abstraction
+//     start() {
+//         this.#burnFuel()
+//         console.log(`car is starting ${this.#fuel}`);
+//     }
+// }
+
+
+// let c1 = new Car();
+// console.log(c1);
+// c1.start()
+// console.log(c1);
+// c1.start()
+// console.log(c1);
+
+
+
+
+
+// PRATICE---------------------------BANK-ACCOUNT-------------------------------
+
+
+
+// class BankAcc {
+//     #balance;
+
+//     constructor(AccHolder, balance = 0) {
+//         this.AccHolder = AccHolder
+//         this.#balance = balance
+//     }
+
+//     deposite(amount) {
+//         if (amount <= 0 || isNaN(amount)) {
+//             console.error("Invalid amount");
+//             return;
+//         }
+//         this.#balance += amount
+//     }
+
+//     withdraw(amount) {
+//         if (amount <= 0 || amount > this.#balance) {
+//             console.error("Invalid amount or insufficient balance");
+//             return;
+//         }
+//         this.#balance -= amount
+//     }
+
+//     // getBalance() {
+//     //     return this.#balance
+//     // }
+
+//     // setBalance(balance) {
+//     //     if (isNaN(balance)) {
+//     //         console.error("invalid amount");
+//     //         return
+//     //     }
+//     //     this.#balance = balance
+//     // }
+
+//     get balance() {
+//         return this.#balance
+//     }
+
+//     set balance(balance) {
+//         if (isNaN(Number(balance)) || balance < 0 ||  !Number.isFinite(balance) || typeof balance !== "number"   ) {
+//             console.error("invalid amount");
+//             return
+//         }
+//         this.#balance = balance
+//     }
+// }
+
+
+
+// let A1 = new BankAcc("Atruba", 500)
+// console.log(A1);
+// A1.balance = 99
+// console.log(A1.balance);
+// A1.deposite(100)
+// console.log(A1.balance);
+
+
+
+
+
+
+
+// INHERITANCE------------------------------------------------------------------=============================================================
+
+
+
+
+
+
+
 
 
 
